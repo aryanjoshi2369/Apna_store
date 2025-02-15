@@ -2,10 +2,12 @@ import React from "react";
 import Categories from "../Categories/Categories";
 
 const Header = () => {
-  return <div>
+  return (
+  <div>
      
     <Categories/>
-  </div>;
+  </div>
+  );
 };
 
 export default Header;
