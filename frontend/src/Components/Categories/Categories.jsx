@@ -15,71 +15,44 @@ const Categories = () => {
   const[hover,sethover]= useState(<FaAngleDown/>)
   return (
     <div className='adcat'>
-    <div className='dropdown'>
-     <a href="#">
-        <img src={toys} /> 
-        <div class="caption" onMouseEnter={()=>{sethover(<FaAngleUp />);}} onMouseLeave={()=>{sethover(<FaAngleDown />);}} >Toys{hover}</div>
-        {/* <div class="caption">Toys<span><FaAngleUp /></span><span className='on-hover'><FaAngleDown /></span></div> */}
-     </a>
-     <div className='dropdown-content' onMouseEnter={()=>{sethover(<FaAngleUp />);}}>
+    <div className='dropdown' onMouseEnter={()=>{sethover(<FaAngleUp />);}} onMouseLeave={()=>{sethover(<FaAngleDown />);}}>
+     <a href="#"/>
+        <img src={toys} alt='toys'/> 
+        <div className="caption">Toys{hover}</div>
       
-      {/* <div className='list-dropdown'> */}
-      <li>Teddy bear 1</li>
-      {/* <div className='list-dropdown-items'>
-        <li>Toy 1</li>
-        <li>Toy2</li>
-        <li>Toy2</li>
-        <li>Toy2</li>
-        <li>Toy2</li>
-        <li>Toy2</li>
-        <li>Toy2</li>
-      </div> */}
-      {/* </div> */}
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-      <li>Teddy bear</li>
-     </div>
-      
-     </div>
+   </div>
+
      <a href="#">
         <img src={appliances} /> 
-        <div class="caption">Appliances</div>
+        <div className="caption">Appliances</div>
      </a>
      <a href="#">
         <img src={fashion} /> 
-        <div class="caption">Fashion</div>
+        <div className="caption">Fashion</div>
      </a>
      <a href="#">
         <img src={flights} /> 
-        <div class="caption">Flights</div>
+        <div className="caption">Flights</div>
      </a>
      <a href="#">
         <img src={furniture} /> 
-        <div class="caption">Furniture</div>
+        <div className="caption">Furniture</div>
      </a>
      <a href="#">
         <img src={grocery} /> 
-        <div class="caption">Grocery</div>
+        <div className="caption">Grocery</div>
      </a>
      <a href="#">
         <img src={mobiles} /> 
-        <div class="caption">Mobiles</div>
+        <div className="caption">Mobiles</div>
      </a>
      <a href="#">
         <img src={utensils} /> 
-        <div class="caption">Utensils</div>
+        <div className="caption">Utensils</div>
      </a>
      <a href="#">
         <img src={toys} /> 
-        <div class="caption">Toys</div>
+        <div className="caption">Toys</div>
      </a>
        
     </div>
