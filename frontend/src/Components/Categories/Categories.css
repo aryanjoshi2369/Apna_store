@@ -25,55 +25,80 @@
 .adcat a{
     text-decoration: none;
 }
-/* .dropdown{
-     
-    position: relative;
+.dropdown-content li{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: 1.2rem; */
+}
+/* .dropdown-content span{
+    margin-top: 0.2rem;
 } */
-/* .dropdown-content,.dropdown-content2 {
+/* .dropdown-content span{
     display: none;
+} */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content visibility fix */
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #f9f9f9;
-    min-width: 10rem;
     text-align: left;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0.5rem;
-    margin-top: 0.1rem;
+    transition: visibility 0.2s, opacity 0.2s ease-in-out;
     z-index: 1;
-     
 }
-.dropdown-content li{
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+/* Flexbox alignment fix */
+.cont {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* Category styling consistency */
+.cat1 li, .cat2 li {
     list-style-type: none;
     margin-top: 0.5rem;
-    padding: 0.2rem;
+    padding: 0.4rem;
     border-radius: 0.2rem;
+    /* border: 1px solid black; */
+    min-width: 10rem;
 }
-.dropdown-content li:hover{
-    background-color: rgba(95, 158, 160, 0.137);
+
+/* Hover effect fix */
+.dropdown-content li:hover {
+    background-color: rgba(95, 158, 160, 0.4);
+    cursor: pointer;
+}
+.cat2 span{
+    visibility: hidden;
+}
+.cat1 span{
+    visibility: hidden;
+}
+.cat1 li:hover span{
+    visibility: visible;
+}
+.cat2{
+    /* border-radius: 0.5rem; */
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    /* background-color: whitesmoke; */
     
 }
-.dropdown:hover .dropdown-content,.dropdown-content2{
-    display: block;
-} */
-/* .cont-show{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 15rem;
-    text-align: left;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0.5rem;
-    margin-top: 0.1rem;
-    z-index: 1;
-}
-.dropdown-content,.dropdown-content2 li{
-    list-style-type: none;
-    margin-top: 0.5rem;
-    padding: 0.2rem;
-    border-radius: 0.2rem;
-}
-.cont{
-    display: flex;
-}
-.cont-show:hover{
-    display: block;
-} */
+
