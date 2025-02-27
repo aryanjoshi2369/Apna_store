@@ -5,6 +5,7 @@ import a from '../../assets/Images/credircard.webp'
 import b from '../../assets/Images/flights.webp'
 import c from '../../assets/Images/samsung.webp'
 import d from '../../assets/Images/industry.jpeg'
+import ProductCard from "../ProductCard/ProductCard";
 
  
 
@@ -20,7 +21,7 @@ const Header = () => {
      
     <Categories/>
     <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-    
+    <ProductCard/>
   </div>
   );
 };
