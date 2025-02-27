@@ -11,6 +11,7 @@ import utensils from '../../assets/Images/utensils.jpeg';
 import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import MobileCategories from '../MobileCategories/MobileCategories';
 
 const Categories = () => {
 //   const[hover,sethover]= useState(<FaAngleDown/>)
@@ -30,6 +31,7 @@ const Categories = () => {
   const toysList10 = ["teddy bear 101", "teddy bear 102", "teddy bear 103", "teddy bear 104", "teddy bear 105", "teddy bear 106", "teddy bear 17", "teddy bear 18", "teddy bear 19", "teddy bear 20"];
    
   return (
+   <>
     <div className='adcat'>
     {/* <div className='dropdown' onMouseEnter={()=>{sethover(<FaAngleUp />);}} onMouseLeave={()=>{sethover(<FaAngleDown />);}}> */}
     {/* <div className='dropdown' onMouseEnter={()=>{sethover(true);}} onMouseLeave={()=>{sethover(false);}}> */}
@@ -487,6 +489,10 @@ const Categories = () => {
     </div>
        
     </div>
+    <div className='mobcat'>
+    <MobileCategories/>
+    </div>
+    </>
   )
 }
 

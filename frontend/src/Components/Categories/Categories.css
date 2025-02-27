@@ -102,4 +102,16 @@
     /* background-color: whitesmoke; */
     
 }
+.mobcat{
+    display: none;
+}
 
+@media screen and (max-width :420px) {
+    .adcat{
+        display:none;
+    }
+    .mobcat{
+        display: block;
+    }
+    
+}
