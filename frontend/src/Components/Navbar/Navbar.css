@@ -101,15 +101,13 @@
 @media (max-width: 480px) {
   .navbar {
     width: 100%;
-    margin: 1vw;
-    padding: 0px;
+    padding: 1vw;
   }
 
   .navbar_act {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0vw 2vw;
   }
 
   .logo {
@@ -130,7 +128,7 @@
     border-radius: 8px;
     border: 2px solid #ed7505;
     height: 6vh;
-    width: 100vw; /* Default width */
+    width: 99vw; /* Default width */
   }
 
   .search_img_mob {
