@@ -107,13 +107,13 @@
 
   .navbar_act {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 2vw;
+    margin: 0vw 2vw;
   }
 
   .logo {
-    width: 120px; /* Smaller logo for mobile */
+    width: 40vw; /* Smaller logo for mobile */
   }
 
   .searchbar {
