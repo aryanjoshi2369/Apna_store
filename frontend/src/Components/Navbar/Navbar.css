@@ -7,7 +7,7 @@
 
 /* ===== NAVBAR STYLES ===== */
 .navbar {
-  padding: 15px 20px;
+  padding: 4vw;
   background-color: white;
 }
 
@@ -100,13 +100,16 @@
 /* ✅ Responsive for Mobile Phones (max-width: 480px) */
 @media (max-width: 480px) {
   .navbar {
-    padding: 10px;
+    width: 100%;
+    margin: 1vw;
+    padding: 0px;
   }
 
   .navbar_act {
     display: flex;
-
     justify-content: space-around;
+    align-items: center;
+    margin: 2vw;
   }
 
   .logo {
@@ -115,12 +118,6 @@
 
   .searchbar {
     display: none;
-  }
-
-  .searchbar_mob_d {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .searchbar_mob {
@@ -134,7 +131,6 @@
     border: 2px solid #ed7505;
     height: 6vh;
     width: 100vw; /* Default width */
-    transition: width 0.4s ease-in-out;
   }
 
   .search_img_mob {
@@ -151,7 +147,8 @@
 
   .navbar-right {
     margin-left: 26vw;
-    gap: 2rem;
+    margin-right: 2vw;
+    gap: 5vw;
   }
 
   .cart_text,
