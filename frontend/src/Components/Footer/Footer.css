@@ -98,3 +98,20 @@
     cursor: pointer;
     color: orange;
 }
+@media screen and (max-width:420px){
+    .footer{
+        display: inline-block;
+    }
+    .footerright{
+        display: inline-block;
+        margin-left: 5rem;
+    }
+    .btmp{
+        display: none;
+        visibility: hidden;
+    }
+    .footerexp{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
