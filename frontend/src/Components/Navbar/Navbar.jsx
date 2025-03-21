@@ -7,7 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({onLoginClick}) => {
   return (
     <div className="navbar">
       <div className="navbar_act">
@@ -24,9 +24,9 @@ const Navbar = () => {
             <span className="cart_text">Cart</span>
           </div>
 
-          <div className="login">
+          <div className="login" onClick={onLoginClick}>
             <img src={user} alt="shop" className="login" />
-            <span className="login_text">Login</span>
+            <span className="login_text" >Login</span>
           </div>
 
           <div className="seller_op">

@@ -10,7 +10,7 @@ import { AiFillApple } from "react-icons/ai";
 
 const Footer = () => {
     const[showcat,setShowCat] = useState(0)
-    console.log(showcat,"+++++++++++++++")
+    // console.log(showcat,"+++++++++++++++")
   if (showcat === 0){
     return (
     <>
@@ -94,7 +94,7 @@ const Footer = () => {
     </div>
     <div className='footerbottom'>
          <div className='bottom1'>
-            <p>Apna Store Commerce Private Ltd 2025-2035</p>
+            <p className='btmp'>Apna Store Commerce Private Ltd 2025-2035</p>
          </div>
          <div className='bottom1'>
             <p>Download App</p>
@@ -257,10 +257,10 @@ const Footer = () => {
          
     <div className='footerbottom'>
          <div className='bottom1'>
-            <p>Apna Store Commerce Private Ltd 2025-2035</p>
+            <p className='btmp'>Apna Store Commerce Private Ltd 2025-2035</p>
          </div>
          <div className='bottom1'>
-            <p>Download App</p>
+            <p className='btmp'>Download App</p>
             <li><FaGooglePlay/></li>
             <li><AiFillApple /></li>
             <li><FaTwitter/></li>
