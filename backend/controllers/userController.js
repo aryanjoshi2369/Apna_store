@@ -1,8 +1,13 @@
 const userModel = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 const createToken = (id) => {
+  if (!process.env.JWT_SECRET) {
+    throw new Error("JWT_SECRET is not defined. Check your .env file.");
+  }
+
   return jwt.sign({ id }, process.env.JWT_SECRET);
 };
 
