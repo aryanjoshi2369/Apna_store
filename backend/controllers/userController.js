@@ -1,6 +1,37 @@
 const userModel = require("../models/userModel");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
+const createToken = (id) => {
+  return jwt.sign({ id }, process.env.JWT_SECRET);
+};
+
+const loginUser = async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const user = await userModel.findOne({ email });
+
+    if (!user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "user don't exist" });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    if (!isMatch) {
+      return res
+        .status(400)
+        .json({ success: false, message: "Invalid Credentials" });
+    }
+
+    const token = createToken(user._id);
+    return res.status(200).json({ success: true, token });
+  } catch (error) {
+    console.error("Login Error:", error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
 const registerUser = async (req, res) => {
   const { name, email, password } = req.body;
   try {
@@ -43,4 +74,4 @@ const registerUser = async (req, res) => {
 //   res.send("heheeh");
 // };
 
-module.exports = { registerUser };
+module.exports = { registerUser, loginUser };
