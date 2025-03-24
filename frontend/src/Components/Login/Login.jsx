@@ -28,8 +28,8 @@ const Login = ({onClose,show}) => {
        
       try {
           // const res = await axios.post(`http://localhost:8888/api/user/register`,{name:name,email:email,password:pass});
-             const res = await axios.post(url,payload);
-          // console.log("////////////////////////Account created Succesfully",res)
+          const res = await axios.post(url,payload);
+          (isSignup ? "" : console.log("////////////////////////Login Succesfully",localStorage.setItem('auth',JSON.stringify(res.data.token))) )
 
           
           if(res && res.data.success){

@@ -4,14 +4,48 @@ import "./ProductContainer.css";
 const ProductContainer = () => {
   return (
     <div className="ProductContainer">
-      <div className="ProductContainer_header_1">Dairy products</div>
+    <h2 className="ProductContainerh">Dairy Products</h2>
+      <div className="ProductContainer_header_1">
       <Product />
-      <div className="ProductContainer_header_2">Cosmetics</div>
       <Product />
-      <div className="ProductContainer_header_3">Snacks</div>
       <Product />
-      <div className="ProductContainer_header_4">Stationary</div>
       <Product />
+      <Product />
+      <Product />
+      </div>
+      <h2 className="ProductContainerh">Cosmetics</h2>
+      <div className="ProductContainer_header_2" >
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      </div>
+      <h2 className="ProductContainerh">Snacks</h2>
+      <div className="ProductContainer_header_3"> 
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      </div>
+      <h2 className="ProductContainerh">Stationary</h2>
+      <div className="ProductContainer_header_4"> 
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      </div>
     </div>
   );
 };

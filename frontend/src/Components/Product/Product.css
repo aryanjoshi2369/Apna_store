@@ -1,5 +1,6 @@
 .Product_item {
-  width: 18%;
+  /* width: 18%; */
+  width: 14rem;
   margin: auto;
   border-radius: 15px;
   border: 1px solid orange;
