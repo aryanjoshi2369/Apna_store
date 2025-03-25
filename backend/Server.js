@@ -2,6 +2,7 @@ const express = require("express");
 const connectDB = require("./config/db.js");
 const cors = require("cors");
 const userRouter = require("./routes/userRoute.js");
+const adminRouter = require("./routes/adminRoute.js");
 
 // App config
 const app = express();
@@ -13,10 +14,10 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 
-
 // api endpoints
 
 app.use("/api/user", userRouter);
+app.use("/api/adminPanel", adminRouter);
 
 app.get("/", (req, res) => res.send("Back End"));
 
