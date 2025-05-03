@@ -1,0 +1,39 @@
+.statcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    border: 0.1rem solid orange;
+    border-radius:0.6rem  ;
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(248, 125, 9);
+    margin-right: 1rem;
+    flex-basis: 80%;
+     
+}
+.stcontainer{
+    display: flex;
+}
+.statsicons{
+    font-size: 2rem;
+}
+.statcontainer1{
+    display: flex;
+    gap: 6rem;
+   
+}
+.totalsales h4{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.totalsales p{
+    opacity: 0.5;
+}
+.borderleft{
+    border-left: 0.1rem solid white;
+    
+}
+.bestseller{
+    flex-basis: 20%;
+    
+}

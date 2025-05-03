@@ -1,0 +1,22 @@
+.sellersidenav0{
+    font-size: 1.4rem;
+    border: 0.2rem solid black;
+    border-radius: 0.4rem;
+    height: 30rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.sellersidenav{
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    
+}
+.hide{
+    display: none;
+}
+.sellersidenav3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,15 @@
+.sellerdash{
+    padding: 0.6rem;
+    height: 37.8rem;    
+    background-color: rgb(248, 125, 9);
+}
+.sellerdashleft{
+    float: left;
+}
+.sellerdash1{
+    /* border: 0.2rem solid black; */
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    height: 34rem;
+}

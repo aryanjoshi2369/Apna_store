@@ -12,7 +12,7 @@
 .Product_item_img_container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
@@ -21,23 +21,41 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  padding: 2vh;
+  /* align-items: center; */
+  padding: 0.3rem;
 }
 
 .name {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vh;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .price {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 2vh;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+   
 }
 
 .quantity {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
-  font-size: 2vh;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.btn-4{
+  border-radius: 0.6rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.pr{
+  padding: 0.4rem;
 }
