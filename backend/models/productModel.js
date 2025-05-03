@@ -4,12 +4,12 @@ const productSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
+      // required: true,
     },
     description: String,
     price: {
       type: Number,
-      required: true,
+      // required: true,
     },
     discountedPrice: Number,
     category: String,
@@ -45,6 +45,6 @@ const productSchema = new mongoose.Schema(
 );
 
 const productModel =
-  mongoose.model.product || mongoose.model("product", productSchema);
+  mongoose.models.product || mongoose.model("product", productSchema);
 
 module.exports = productModel;
