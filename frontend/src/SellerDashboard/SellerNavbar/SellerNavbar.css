@@ -1,0 +1,16 @@
+.sellernav{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.sellernav2{
+    display: flex;
+    gap: 1.5rem;
+}
+.sellernav3 img{
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+}

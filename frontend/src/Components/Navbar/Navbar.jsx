@@ -6,6 +6,7 @@ import user from "../../assets/Images/user.png";
 import { IoSearchOutline } from "react-icons/io5";
 
 import "./Navbar.css";
+import { Link } from "react-router";
 
 const Navbar = ({onLoginClick}) => {
   return (
@@ -21,7 +22,7 @@ const Navbar = ({onLoginClick}) => {
         <div className="navbar-right">
           <div className="cart">
             <img src={cart} alt="cart" className="cart" />
-            <span className="cart_text">Cart</span>
+            <Link to='/seller'><span className="cart_text">Cart</span></Link>
           </div>
 
           <div className="login" onClick={onLoginClick}>
