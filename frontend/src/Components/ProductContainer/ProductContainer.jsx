@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Product from "../Product/Product";
 import "./ProductContainer.css";
-import { StoreContext } from "../../../context/storeContext";
+import { StoreContext } from "../../context/storeContext.jsx";
 
 const getImageSrc = (image) => {
   if (!image || !image.data || !image.data.data || !image.contentType)
